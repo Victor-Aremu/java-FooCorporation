@@ -5,8 +5,8 @@ public class FooCorporation {
         totalPay(10.00, 73 );
     }
     public static void totalPay(double basePay, double hoursWorked){
-        double overtime = (hoursWorked % 40) * basePay;
-        double salary = hoursWorked * basePay;
+        double overtime = (hoursWorked - 40) * basePay * 1.5;
+        double salary = 40 * basePay;
 
         if ((hoursWorked <= 40) && (basePay >= 8.0)){
             System.out.println(salary);
